@@ -17,9 +17,23 @@ foreach($match[0] as $value){
 print "$value";} 
 
 ?>
-<section id="emmet">
-	<h1>エメット記載法について</h1>
-	<p>かなり便利になりそう</p>
-</section>
+<style>.f-container{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: flex-start;
+	-webkit-flex-wrap: wrap;
+	-moz-flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	-o-flex-wrap: wrap;
+	flex-wrap: wrap;
+	}</style>
+<div class="f-container">
+	<div class="f-item"></div>
+	<div class="f-item"></div>
+	<div class="f-item"></div>
+</div>
 </body>
 </html>
