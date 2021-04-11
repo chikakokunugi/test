@@ -34,7 +34,7 @@ print "$value";}
 	}
 	
 	.f-item {
-		width: 50%;
+		width: calc(100% / 3);
 		height: 500px;
 		background-color: hotpink;
 		border: solid 10px #fff;
