@@ -5,7 +5,8 @@
 	<title>Document</title>
 </head>
 <body>
-	<?php
+<!--
+	<　?php
 
 	$string = file_get_contents("sample.html");
 	
@@ -17,6 +18,7 @@ foreach($match[0] as $value){
 print "$value";} 
 
 ?>
+-->
 <style>.f-container{
 	display: -webkit-flex;
 	display: -moz-flex;
@@ -29,6 +31,10 @@ print "$value";}
 	-ms-flex-wrap: wrap;
 	-o-flex-wrap: wrap;
 	flex-wrap: wrap;
+	}
+	
+	.f-item {
+		width: 50%;
 	}</style>
 <div class="f-container">
 	<div class="f-item"></div>
