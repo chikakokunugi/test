@@ -40,6 +40,8 @@ print "$value";}
 		border: solid 10px #fff;
 		box-sizing: border-box;
 		color: aqua;
+		text-align: center;
+		line-height: 500px;
 	}</style>
 <div class="f-container">
 	<div class="f-item">
