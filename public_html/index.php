@@ -1,4 +1,11 @@
-<?php
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<?php
 
 	$string = file_get_contents("sample.html");
 	
@@ -9,5 +16,10 @@
 foreach($match[0] as $value){
 print "$value";} 
 
-少し容量がつかめてきたかも
-	
+?>
+<section id="emmet">
+	<h1>エメット記載法について</h1>
+	<p>かなり便利になりそう</p>
+</section>
+</body>
+</html>
