@@ -10,3 +10,6 @@ foreach($match[0] as $value){
 print "$value";} 
 
 そしてもう一度テスト
+	
+	ねえねえ難しいんだけど
+	
