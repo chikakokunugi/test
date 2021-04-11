@@ -35,6 +35,8 @@ print "$value";}
 	
 	.f-item {
 		width: 50%;
+		height: 500px;
+		background-color: hotpink;
 	}</style>
 <div class="f-container">
 	<div class="f-item"></div>
