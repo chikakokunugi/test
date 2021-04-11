@@ -1,0 +1,180 @@
+/* CSS Document */
+
+@charset "UTF-8";
+/* CSS Document */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+a {
+  text-decoration: none; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  font-size: 1.7em;
+  font-family: "Helvetica Neue",Arial,"Hiragino Maru Gothic Pro","Hiragino Kaku Gothic ProN","Hiragino Sans",Meiryo,sans-serif;
+  color: #3e3b35;
+  letter-spacing: 1px; }
+  @media (max-width: 480px) {
+    body {
+      font-size: 1.4rem; } }
+
+a {
+  text-decoration: none;
+  cursor: pointer; }
+
+
+.container {
+  width: 100%;
+  max-width: 1100px;
+  margin: auto;
+  box-sizing: border-box; }
+
+.contactBox {
+  background: #fff8e5;
+  border-radius: 15px;
+  padding: 50px 50px 40px; }
+  @media (max-width: 767px) {
+    .contactBox {
+      padding: 30px 30px 20px; } }
+  @media (max-width: 480px) {
+    .contactBox {
+      padding: 20px 15px 10px; } }
+  .contactBox__title {
+    font-size: 2.3rem;
+    text-align: center;
+    line-height: 1.5; }
+    @media (max-width: 480px) {
+      .contactBox__title {
+        font-size: 1.7rem; } }
+    .contactBox__title--before {
+      color: #ffbb03;
+      margin-right: 15px; }
+      @media (max-width: 480px) {
+        .contactBox__title--before {
+          margin-right: 10px; } }
+    .contactBox__title--after {
+      color: #ffbb03;
+      margin-left: 15px; }
+      @media (max-width: 480px) {
+        .contactBox__title--after {
+          margin-left: 10px; } }
+  .contactBox__text {
+    font-size: 2.2rem;
+    text-align: center;
+    margin-bottom: 20px; }
+    @media (max-width: 480px) {
+      .contactBox__text {
+        font-size: 1rem;
+        margin-bottom: 10px; } }
+  .contactBox__link {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap; }
+    .contactBox__link--item {
+      width: 300px;
+      letter-spacing: 1px;
+      border-width: 7px;
+      border-style: solid;
+      box-sizing: border-box;
+      position: relative;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 130px;
+      background: #fff;
+      margin-bottom: 10px; }
+      @media (max-width: 1099px) {
+        .contactBox__link--item {
+          width: 100%; } }
+      @media (max-width: 480px) {
+        .contactBox__link--item {
+          font-size: 1.4rem;
+          height: 80px;
+          border: 3.5px solid #cce6f0;
+          margin-bottom: 10px; } }
+      .contactBox__link--item:hover p {
+        color: #339dc5; }
+      .contactBox__link--item::after {
+        content: "";
+        border-top: 11px solid transparent;
+        border-bottom: 11px solid transparent;
+        border-left: 16px solid #339dc5;
+        position: absolute;
+        right: -16px;
+        top: 40%; }
+        @media (max-width: 480px) {
+          .contactBox__link--item::after {
+            border-top: 7px solid transparent;
+            border-bottom: 7px solid transparent;
+            border-left: 11px solid #339dc5;
+            right: -11px; } }
+      .contactBox__link--itemText {
+        color: #000; }
+        .contactBox__link--itemTextTop {
+          font-size: 2.4rem;
+          line-height: 1.5;
+          display: flex;
+          justify-content: center;
+          align-items: center; }
+          @media (max-width: 480px) {
+            .contactBox__link--itemTextTop {
+              font-size: 1.8rem; } }
+          .contactBox__link--itemTextTop img {
+            width: 25px;
+            margin-right: 7px; }
+        .contactBox__link--itemTextBottom {
+          font-size: 1.3rem; }
+
+.contactWeb {
+  border-color: #f899b8; }
+  .contactWeb::after {
+    border-left-color: #f36b97; }
+
+.contactLine {
+  border-color: #90d861; }
+  .contactLine::after {
+    border-left-color: #79b453; }
+
+.contactTel {
+  border-color: #b49cc5; }
+  .contactTel::after {
+    border-left-color: #9068ac; }
+
