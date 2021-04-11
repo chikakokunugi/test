@@ -9,5 +9,5 @@
 foreach($match[0] as $value){
 print "$value";} 
 
-なかなかまだわからないことの方が多い
+少し容量がつかめてきたかも
 	
