@@ -42,9 +42,15 @@ print "$value";}
 		color: aqua;
 	}</style>
 <div class="f-container">
-	<div class="f-item"></div>
-	<div class="f-item"></div>
-	<div class="f-item"></div>
+	<div class="f-item">
+		<p>いい感じ</p>
+	</div>
+	<div class="f-item">
+		<p>いい感じ</p>
+	</div>
+	<div class="f-item">
+		<p>いい感じ</p>
+	</div>
 </div>
 </body>
 </html>
