@@ -38,6 +38,8 @@ print "$value";}
 		height: 500px;
 		background-color: hotpink;
 		border: solid 10px #fff;
+		box-sizing: border-box;
+		color: aqua;
 	}</style>
 <div class="f-container">
 	<div class="f-item"></div>
