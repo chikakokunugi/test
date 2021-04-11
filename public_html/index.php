@@ -9,7 +9,4 @@
 foreach($match[0] as $value){
 print "$value";} 
 
-いいいいい
-	
-	eeee
-	
+そしてもう一度テスト
