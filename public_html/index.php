@@ -9,7 +9,7 @@
 	
 	<?php
 
-	$string = file_get_contents("sample.html");
+	$string = file_get_contents("test.html");
 	
 	$pattern = '/<img.*?">/';
 	
