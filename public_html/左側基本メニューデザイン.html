@@ -1,0 +1,65 @@
+
+<div id="leftContents">
+
+	<div class="section" id="l_search">
+    	<h2><img src="/images/original_design_default/samplesource/3/searchTitle.png" alt="商品検索"></h2>
+        <div class="inner">
+        	<div class="inputWrap clear">
+            <input name="search" size="20" onKeyDown="CheckKey_search()" class="search_input">
+            <a href="[SEARCH]"><img src="/images/original_design_default/samplesource/3/l_searchBtn.png" alt="検索する"></a>
+            </div>
+        </div>
+    </div>
+
+	<div class="section" id="l_category">
+    	<h2><img src="/images/original_design_default/samplesource/3/categoryTitle.png" alt="カテゴリー"></h2>
+        <div class="inner">
+			[LIST_1_178]
+        </div>
+	</div>
+
+	<div class="section" id="l_member">
+		<a href=[MEMBER]><img src="/images/original_design_default/samplesource/3/l_memberBtn.png" alt="会員登録/修正"></a>
+        <!--保有ポイント確認表示-->
+        <ul>
+        	[IF_MONEY]<li><a href=[MONEY]>ポイント確認</a></li>[ENDIF_MONEY]
+        	<li><a href=[ORDER]>注文履歴</a></li>
+        </ul>
+        
+        [IF_MAILMAG1]
+        <!--会員管理 > メルマガの設定 > メルマガ設定-->
+        <a href=[MAILMAGAZINE_URL1]><img src="/images/original_design_default/samplesource/3/l_mailBtn.png" alt="メルマガ登録"></a>
+		[ENDIF_MAILMAG1]
+        
+	</div>
+   
+	<div class="section" id="l_calendar">
+        [CALENDAR_DATE]
+        [CALENDAR]
+        [CALENDAR_DATE2]
+        [CALENDAR2]	
+    </div>
+
+	<div class="section" id="l_twitter">
+		[SHOPTWEET]
+	</div>
+
+	<div class="section" id="l_poll">
+        [LEFT_POLL]
+	</div>
+
+	<div class="section" id="l_recent">
+        <!--チェック履歴レコメンド表示の表示-->
+        [IF_RECENT]
+        [RECENT]
+        [ENDIF_RECENT]
+    </div>
+    
+    <div class="section" id="l_banner">
+        [BANNER_LIST]
+    </div>
+
+<!--計測用タグ-->
+[TRAFFIC]
+
+</div>
