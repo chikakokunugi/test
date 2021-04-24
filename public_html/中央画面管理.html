@@ -1,0 +1,64 @@
+<div class="rightContents" id="top">
+
+	<div class="section" id="r_shopintro">
+        [SHOPINTRO]
+    </div>
+
+	<div class="section" id="r_new">
+		[NEW1NN]
+	</div>
+
+	<div class="section" id="r_recommend">
+    	[SUISEN1YN]
+	</div>
+
+	[IF_RANKING]
+	<div class="section" id="r_ranking">
+        <img src="/images/original_design_default/samplesource/3/ranking_title.gif" alt="ランキング" class="titleMgn">
+        <ul class="clear">
+        [RANKING_1_5]
+        <li class="rankList" id="rank[RANK_NO]">
+            <em>[RANK_NO]</em>
+            <div class="rankImg"><a href=[RANK_ITEMDETAIL]>[RANK_IMG_M]</a></div>
+            <div class="rankDetail">
+            	<p class="rankName"><a href=[RANK_ITEMDETAIL]>[RANK_BRANDNAME]</a></p>
+            	<p class="rankPrice">[RANK_PRICE]</p>
+            </div>
+        </li>
+        [ENDRANKING]
+        </ul>
+	</div>
+    [ENDIF_RANKING]
+
+	<div class="r_wrap clear">
+
+    	<div class="r_left">
+        	[IF_REVIEW]
+            <div class="section" id="r_review">
+            	<img src="/images/original_design_default/samplesource/3/review_title.gif" alt="新着レビュー" class="titleMgn">
+                [REVIEW_VIEW_5]
+            </div>
+            [ENDIF_REVIEW]
+
+    		<!--『中央画面に表示する』を選択している場合、内容を出力-->
+			[IF_RECENT]
+            <div class="section" id="r_recent">
+                [RECENT1]
+			</div>
+            [ENDIF_RECENT]
+
+			<div class="section" id="r_news">
+            	[NEWSEVENT2]
+			</div>
+		</div>
+
+		<div class="r_right">
+            <div class="section" id="r_special">
+                [SPECIAL1Y]
+            </div>
+        </div>
+	</div>
+
+
+
+</div>

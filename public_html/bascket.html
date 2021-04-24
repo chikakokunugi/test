@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>無題ドキュメント</title>
+<link rel="stylesheet" href="bascket.css">
+</head>
+
+<body>
+<div class="M_headBasket" id="M_basketTemp1">
+                <div id="M_headBasketSwitch" onmouseover="javascript:MakeShop_toggleBasketBox(true)" onmouseout="javascript:MakeShop_toggleBasketBox(false)">
+                    <div id="M_basketClosedBox">
+                        <a href="/shop/basket.html" id="M_basket">
+                        <div class="M_basketMarginBox">買い物かご</div>
+                        </a>
+                    </div>
+                    <div id="M_basketOpenedBox" style="display: none;">
+
+                        <div class="M_basketMarginBox">
+                        <table>
+                           <tbody><tr id="last-child"><td colspan="3">カートに商品がありません。</td></tr>
+                         </tbody></table>
+                        </div>
+
+                    </div>
+                </div>
+                <p id="M_headBasketIn">現在の中身：<em>0点</em></p>
+            </div>	
+	
+	
+</body>
+</html>
