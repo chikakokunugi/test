@@ -1,0 +1,904 @@
+/* reset */
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+}
+
+img{max-width:100%;}
+
+*{
+    webkit-appearance:none; 
+    -webkit-appearance: none;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section { 
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+div,p{
+	word-break: break-all;	
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+input, select,textarea{
+    vertical-align:middle;
+    border:none;
+    font-size:inherit;
+}
+
+
+input[type="text"],
+input[type="number"],
+input[type="search"],
+select{
+    padding:10px;
+    border:1px solid #808080;   
+    box-sizing:border-box;
+    width:100%;
+}
+
+select{
+    background:url("/smartphone/images/template/5/icon-select.png") no-repeat 92% center;
+    background-size:20px 20px;
+    padding-right:36px; 
+}
+
+.clear:after{
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}
+
+/***************************************
+
+      layout
+
+***************************************/
+
+body{
+    font-family: "ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","Meiryo","メイリオ","ＭＳ Ｐゴシック","MS PGothic",sans-serif;
+    background: #ffffff;
+    text-align:center;  
+    line-height:1.5;
+    color:#333;
+    position:relative;
+    overflow-x:hidden;
+    right:0;
+    font-size:14px;
+}
+
+img{
+    max-width:100%; 
+    vertical-align:bottom;
+}
+
+img[width="1"],img[width="0"]{
+    display:none!important; 
+}
+
+
+/***************************************
+
+      head
+
+***************************************/
+
+.navBar{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    z-index:1000;
+    background:#fff;
+    border-bottom:1px solid #fff;
+}   
+
+.navBar li{
+    float:left; 
+    width:33%;  
+    background:#e5e5e5;
+    box-sizing:border-box;
+    height:46px;
+    line-height:46px;
+    margin-right:0.5%;
+    font-size:13px;
+}
+
+.navBar li:last-child{
+    margin-right:0; 
+}
+
+.navBar li a{
+    display:block;
+    height:46px;
+    position: relative;
+}
+
+.navBar li img{
+    width:22px;
+    height:22px;
+    vertical-align:-6px;
+    margin-right:3px;
+}
+
+.navCartIcon{
+	position: absolute;
+	right: 12px;
+	top: 8px;
+	width: 17px;
+	height: 17px;
+	font-size: 11px;
+	border-radius: 9px;
+	background: #c7004c;
+	box-shadow: 0px 1px 2px #ccc;
+	line-height: 17px;
+	color: #fff; 
+	font-family: Arial, Helvetica, "sans-serif";
+}
+
+#sideMenu{
+    position:fixed;
+    top:47px;
+    right:-270px;
+    width:270px;
+    height:100%;
+    background:#4f4f4f;
+	overflow:scroll;
+}
+
+.searchArea{
+    background:#333;
+    padding:15px 10px;
+    text-align:left;    
+}
+
+input[name="brand_search_form"]{
+    display:inline-block;
+    width:80%;
+    padding:10px;
+    box-sizing:border-box;
+    border:none;
+}
+
+input[name="brand_search_button"]{
+    border-radius:6px;  
+    box-sizing:border-box;
+    background:url("/smartphone/images/template/5/icon-search.png") no-repeat center center;
+    background-size:26px 26px;
+    text-indent:-9999em;
+    width:40px;
+    height:30px;
+}
+
+.sideNav{
+    margin:15px 0 100px;
+    text-align:left;
+    font-size:15px;
+}
+
+.sideNav,.sideNav a{
+    color:#fff;
+}
+
+.sideNav li a{
+    padding:10px;
+    display:block;  
+}
+
+.sideNav-title{
+	padding: 10px;
+}
+
+.inner-sideNav{
+	margin-bottom: 8px;	
+}
+
+.inner-sideNav li a{
+	padding-left: 25px;
+}
+
+.categorySwitch{
+    padding:10px;
+    display:block;
+    background:url("/smartphone/images/template/5/icon-close.png") no-repeat 90% center;
+    background-size:26px 26px;
+}
+
+.categorySwitch.open{
+    background-image:url("/smartphone/images/template/5/icon-open.png");    
+}
+
+.sideCategory{
+    display:none;   
+}
+
+#category_list2 {
+    margin-top:5px;
+}   
+
+#category_list2 li a{
+    font-size:13px;
+}
+
+header{
+    margin-top:47px;    
+}
+
+/***************************************
+
+      common
+
+***************************************/
+
+/* スライダー下の余白 */
+#mainContents .bx-wrapper{
+	margin-bottom: 35px;
+}
+
+#list_item,
+.item,
+.rankingList{
+    text-align:left;
+    margin:20px auto;   
+	letter-spacing:-0.4em; 
+}
+
+#list_item li,
+.item li,
+.rankingList li{
+    display:inline-block;
+    vertical-align:top; 
+    width:31%;
+    margin-left:2%;
+    font-size:12px;
+    margin-bottom:15px;
+    text-align:left;
+	letter-spacing:normal;
+}
+
+#list_item li:nth-child(3n),
+.item li:nth-child(3n),
+.rankingList li:nth-child(3n){
+    margin-right:1%;
+}
+
+#list_item .itemImgWrap,
+.item .itemImg,
+.rankingList .itemImg{
+    text-align:center;
+    margin-bottom:5px;
+	position:relative;
+}
+
+.rankingNum{
+	background:#2490d0;
+	color:#fff;	
+	border-radius:50%;
+	width:22px;
+	height:22px;
+	line-height:22px;
+	display:inline-block;
+	position:absolute;
+	left:-3px;
+	top:-3px;
+}
+
+.rankingPrice{
+	font-weight:bold;
+}
+
+.item .reviewRateStar{
+	width:15px;
+	height:15px;
+	background-size:15px 15px;
+	margin:0 0.5px;	
+}
+
+.item .reviewCount{
+	display:none;	
+}	
+
+.itemDetail{
+    text-align:left;    
+}
+
+.item span{
+    font-weight:bold;   
+}
+
+.btn{
+    display:inline-block;
+    padding:10px;
+    border-radius:6px;  
+    width:80%;
+    box-sizing:border-box;
+}
+
+
+.pager{
+	margin-top: 20px;
+	display: inline-block;
+}
+
+.pager li{
+	display: inline-block;
+}
+
+.pager span{
+	display: inline-block;
+	color: #333333;
+	text-decoration: none;
+	margin-right: 10px;
+	background: #e8e8e8;
+	border-radius: 50%;
+	display: inline-block;
+	padding: 8px 15px;
+	font-size: 14px;
+}
+
+.pager span.btn-next,
+.pager span.btn-prev{
+	border-radius: 6px;
+}
+
+.pager span.current{
+	background-color: #333;
+	color: #FFF;
+	border-radius: 50%;
+}
+
+/***************************************
+
+      content
+
+***************************************/
+
+#main-content{
+    margin:10px 0;  
+}
+
+.heading{
+    font-size:16px;
+}
+
+/***************************************
+
+      top
+
+***************************************/
+
+.index-section{
+    margin-bottom:30px; 
+}
+
+.recommendHeading,
+.newHeading,
+.rankingHeading{
+    background:#222;    
+    color:#fff;
+    padding:6px 0;  
+}
+
+
+.itemListReview{
+	margin:10px auto 40px;		
+}
+
+.itemListReview li{
+	width:100%;
+	margin:0;
+	display:block;
+	border-bottom:1px solid #ccc;
+}
+
+.itemListReview a{
+	display:block;
+	padding:10px;
+	box-sizing:border-box;
+}
+
+.itemListReview .itemBox{
+	display:table;
+}
+
+.itemListReview .itemImg,
+.itemListReview .itemDetail{
+	display:table-cell;
+	vertical-align:top;
+}
+
+.itemListReview .itemDetail{
+	padding-left:5px;	
+}
+
+.itemListReview .itemImg{
+	width:80px;	
+}
+
+.itemImg img{
+	height:auto;	
+}
+
+.reviewBox{
+	margin-top:8px;
+	font-size:12px;
+	color:#666;	
+	background:#eee;
+	padding:10px;
+	width:100%;
+	box-sizing:border-box;
+}
+
+.reviewNullText{
+	text-align:center;	
+	padding:32px 0 48px;
+}
+
+.catlistHeading{
+    text-align:left;
+    padding:0 0 10px 10px;
+}
+
+.catMenu a{
+    display:block;
+    text-align:left;
+    padding:10px;
+    font-size:15px;
+    border-top:1px dotted #666; 
+}
+
+.catMenu li:last-child a{
+    border-bottom:1px dotted #666;  
+}
+
+/***************************************
+
+      category
+
+***************************************/
+
+#topicPath,
+.searchPath{
+    background:#eee;
+    text-align:left;
+    padding:10px;
+    font-size:11px; 
+    margin-bottom:10px;
+    word-wrap: break-word; 
+}
+
+#topicPath,
+#topicPath a,
+.searchPath{
+    color:#666; 
+}
+
+#topicPath li{
+    display:inline; 
+}
+
+.moreBtn a{
+    display:inline-block;
+    padding:10px;
+    width:80%;
+    border-radius:6px;
+    border:3px solid #ccc;  
+}
+
+/***************************************
+
+      利用案内/特定商取引/個人情報保護ポリシー
+
+***************************************/
+
+
+h3.catTit {
+    text-align:left;
+    font-size:17px;
+    margin:20px 10px 25px;
+}
+
+.editContent {
+    margin:0 10px 24px;
+    text-align:left;
+}
+
+.editContent h4{
+    font-size:14px;
+    margin-bottom:20px;
+}
+
+#lawList th{
+    font-size:14px;
+}
+
+#lawList td{
+    font-size:13px;
+    margin-bottom:30px; 
+    padding:15px 0 30px;
+}
+
+.editArea {
+    font-size:12px;
+    text-align:left;
+}
+
+.editArea pre {
+    margin:10px;
+    white-space:pre-wrap;
+}
+
+/***************************************
+
+      商品レビュー
+
+***************************************/
+
+/* レビューの星 */
+.reviewRate{
+	display:inline-block;	
+	vertical-align:middle;
+	font-size:0;
+	margin:8px 0 8px -1px;
+}
+
+.reviewRateStar{
+	display:inline-block;
+	width:21px;
+	height:21px;
+	text-indent:-9999em;
+	cursor:pointer;
+	background:no-repeat center center;
+	background-size:21px 21px;
+	margin:0 1px;
+}
+
+.starOn{
+	background-image:url(/smartphone/images/star_on.png);	
+}
+
+.starOff{
+	background-image:url(/smartphone/images/star_off.png);		
+}
+
+.starHalf{
+	background-image:url(/smartphone/images/star_half.png);		
+}
+
+
+/* レビューを書く */
+.reviewContent{
+	text-align:left;
+	margin:0 10px 24px;	
+}
+
+.reviewForm dl {
+    margin-bottom: 10px;
+}
+.reviewForm dd {
+    margin-bottom: 15px;
+}
+.reviewForm dt {
+	margin-bottom:4px;
+	font-weight:bold;
+}
+.reviewForm dl input {
+    padding: 6px 0;
+    width: 99%;
+}
+.reviewForm dl textarea {
+    padding: 6px 0;
+    width: 99%;
+}
+
+.reviewForm .reviewRateStar{
+	width:43px;
+	height:43px;
+	background-size:43px 43px;	
+}
+
+.reviewContent .required {
+	background: #C00;
+	color: white;
+	display: inline-block;
+	font-size: 11px;
+	margin-left: 8px;
+	padding: 1px 3px;
+	font-weight: normal;
+}
+
+.reviewItem{
+    margin: 16px auto;
+	width: 100%;
+	box-sizing: border-box;
+	padding:16px;
+	background:#eee;
+	box-sizing:border-box;
+	display:table;
+}
+
+.reviewItemUnit{
+	display:table-cell;
+	vertical-align: middle;
+	text-align:left;
+}
+.reviewItemName{
+	padding-left:8px;
+	font-size:13px;
+}
+
+.reviewItemImg{
+	width:80px;	
+}
+
+.reviewItemImg img{
+	border: solid 1px #ccc;
+	box-sizing: border-box;
+	max-width:100%;
+	height:auto;
+}
+
+.errorTxt{
+	color:#cc0000;
+	margin-bottom:5px;
+}
+
+.captionTxt{
+	color:#888;	
+	text-align:right;
+	font-size:12px;
+}
+
+.reviewText{
+	border: 1px solid #808080;
+    box-sizing: border-box;
+    padding: 10px;
+    width: 100%;
+	height:120px;
+}
+
+.btnPost{
+	background:#999;
+	text-align:center;
+	color:#fff !important;	
+	width:100%;
+	padding:15px 0;
+	font-size:16px;
+}
+
+#review #back .btn{	
+	width:auto;
+	font-size:13px;
+	padding:10px 30px;
+	background:#eee;
+}
+
+
+/***************************************
+
+      お知らせ
+
+***************************************/
+.newsHeading {
+    background: #222;
+    color: #fff;
+    padding: 6px 0;
+}
+
+.newsList{
+	margin: 15px;
+}
+
+.newsList li{
+	text-align: left;
+	margin-bottom: 5px;
+}
+
+.newsDate,
+.newsTitle{
+	vertical-align: top;
+    display: table-cell;
+}
+
+.newsDate {
+	color:#999;
+	padding: 2px 5px 2px 0px;
+	white-space: nowrap;
+	font-size: 10px;
+}
+
+.newsTitle{
+	font-size: 12px;
+}
+
+.newsIndexLink{
+	margin-bottom: 10px;
+}
+
+/* お知らせ詳細 */
+
+.newsMain{
+	padding: 15px;
+	text-align: left;
+}
+
+.newsMain .newsMainInfo{
+	font-size: 12px;
+	color: #999;
+	margin-bottom: 5px;
+	text-align: right;
+}
+
+.newsMain .newsMainTitle{
+	font-size: 14px;
+	margin-bottom: 10px;
+}
+
+.newsMain .newsMainWrap{
+	margin-bottom: 30px;
+	border-top: dotted 1px #999;
+	border-bottom: dotted 1px #999;
+}
+
+.newsMain .newsMainContent{
+	font-size: 12px;
+	padding: 20px 10px 50px;
+}
+
+.newsMain .newsMainPager{
+	width: 100%;
+	margin-bottom: 20px;
+	overflow:hidden;
+}
+
+.newsMain .newsMainPager li{
+    text-align: center;
+}
+
+.newsMain .newsMainPager a{
+	display: inline-block;
+	background: #e5e5e5;
+	color: #333;	
+	width: 25%;
+	white-space: nowrap;
+}
+
+.newsMain .newsMainPager a.btnPrev{
+	float: left;
+}
+
+.newsMain .newsMainPager a.btnNext{
+	float: right;
+}
+
+.newsMain .newsIndexBtn a{
+	background: #333;
+	color: #fff;	
+	width: 100%;
+    text-align: center;
+}
+
+/* お知らせ一覧 */
+
+.newsListAll{
+	margin-bottom: 30px;
+}
+
+.newsListAll .newsListContent li{
+	padding-bottom: 10px;
+	margin-bottom: 10px;
+	border-bottom: dotted 1px #999;
+}
+
+.newsListAll .newsDate,
+.newsListAll .newsTitle{
+	display: block;
+}
+
+.newsListAll .newsDate{
+	font-size: 12px;
+}
+
+.newsListAll .newsTitle{
+	font-size: 14px;
+}
+
+.newsTitle{
+	font-size: 12px;
+}
+
+.newsListPager{
+	margin: 0 auto;
+	font-size: 12px;
+}
+
+/***************************************
+
+      footer
+
+***************************************/
+
+#footer-content{
+    background:#b2b2b2; 
+    font-size:12px;
+    padding:10px 0 20px;
+    margin-top:60px;
+}
+
+.footerNav{
+    margin-bottom:10px; 
+}
+
+.footerNav-link{
+    font-size:10px;
+    display:inline; 
+    padding:0 4px;
+}
+
+.footerNav-link a{
+    color:#fff; 
+}
+
+.btn-switch{
+    background:#fff;    
+    color:#666;
+    width:60%;
+}
+
+.copyright{
+    font-size:10px;
+    padding:15px 0; 
+    color:#b2b2b2;
+}

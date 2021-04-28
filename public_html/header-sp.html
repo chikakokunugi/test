@@ -1,0 +1,52 @@
+<nav class="clearfix relative">
+<div class="nav navMenu" id="sideButton"><img src="https://gigaplus.makeshop.jp/samasama10/sp/icon/header-menu.png"></div>
+<div class="nav navHome"><a href="<{$home_url}>"><img src="https://gigaplus.makeshop.jp/samasama10/sp/logo/top.png"></a></div>
+<div class="navCart absolute"><a href="<{$basket_url}>"><img src="https://gigaplus.makeshop.jp/samasama10/sp/icon/cart.png"><{if $cart_quantity != 0}><span class="navCartIcon"><{$cart_quantity}></span><{/if}></a></div>
+<div class="inputWrap"><div class="searchArea"><{$search_form}><{$search_btn}></div></div>
+</nav>
+
+<!--ドロワーメニュー-->
+<div id="sideMenu">
+	<div class="searchArea">
+    	 <{$search_form}>
+         <{$search_btn}>
+    </div>
+    <div class="sideNav">
+        <ul>
+          <li>
+              <p class="sideNav-title">マイページ</p>
+              <ul class="inner-sideNav">
+                  <li class="sub-sideNav"><a href="<{$member_edit_url}>">会員情報修正</a></li>
+                  <li class="sub-sideNav"><a href="<{$member_orderhistory_url}>">注文履歴</a></li>
+                  <{if $is_enable_point}>
+                  <li class="sub-sideNav"><a href="<{$member_point_url}>">ポイント</a></li>
+                  <{/if}>
+                  <{if $member.is_logged_in}>
+                  <li class="sub-sideNav"><a href="<{$login_url}>">ログアウト</a></li>
+                  <{else}>
+                  <{/if}>
+              </ul>
+          </li>
+            <li><a href="<{$guide_url}>">ご利用ガイド</a></li>
+            <li><a href="<{$url.company}>">このショップについて</a></li>
+            <li><a href="<{$support_url}>">お問い合わせ</a></li>
+            <li><span class="categorySwitch">カテゴリから探す</span>
+            	<div class="sideCategory"><{$category_list2_html}></div>
+            </li>
+        </ul>
+       
+	</div>
+</div>
+
+
+
+<script>
+    $(function(){
+        $(".categorySwitch").on("click", function() {
+            $(this).next().slideToggle();
+			$(this).toggleClass("open");
+        });
+		return false;
+    });
+</script>
+

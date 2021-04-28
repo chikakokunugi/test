@@ -1,0 +1,62 @@
+<nav class="navBar">
+    <ul>
+        <li class="nav navHome"><a href="<{$home_url}>"><img src="/smartphone/images/template/5/icon-home.png">ホーム</a></li>
+        <li class="nav navCart"><a href="<{$basket_url}>"><img src="/smartphone/images/template/5/icon-cart.png">カート<{if $cart_quantity != 0}><span class="navCartIcon"><{$cart_quantity}></span><{/if}></a></li>
+        <li class="nav navMenu" id="sideButton"><img src="/smartphone/images/template/5/icon-menu.png">メニュー</li>
+    </ul>
+</nav>
+
+<!--ドロワーメニュー-->
+<div id="sideMenu">
+	<div class="searchArea">
+    	 <{$search_form}>
+         <{$search_btn}>
+    </div>
+    <div class="sideNav">
+        <ul>
+          <li>
+              <p class="sideNav-title">マイページ</p>
+              <ul class="inner-sideNav">
+                  <li class="sub-sideNav"><a href="<{$member_edit_url}>">会員情報修正</a></li>
+                  <li class="sub-sideNav"><a href="<{$member_orderhistory_url}>">注文履歴</a></li>
+                  <{if $is_enable_point}>
+                  <li class="sub-sideNav"><a href="<{$member_point_url}>">ポイント</a></li>
+                  <{/if}>
+                  <{if $member.is_logged_in}>
+                  <li class="sub-sideNav"><a href="<{$login_url}>">ログアウト</a></li>
+                  <{else}>
+                  <{/if}>
+              </ul>
+          </li>
+            <li><a href="<{$guide_url}>">ご利用ガイド</a></li>
+            <li><a href="<{$url.company}>">このショップについて</a></li>
+            <li><a href="<{$support_url}>">お問い合わせ</a></li>
+            <li><span class="categorySwitch">カテゴリから探す</span>
+            	<div class="sideCategory"><{$category_list2_html}></div>
+            </li>
+        </ul>
+       
+	</div>
+</div>
+
+
+<header>
+    <p class="siteName">
+    <{if $logo_path}>
+        <a href="<{$home_url}>"><img  src="<{$logo_path}>"></a>
+    <{else}>
+        <a href="<{$home_url}>"><{$shop_name}></a>
+    <{/if}>
+    </p>
+</header>
+
+<script>
+    $(function(){
+        $(".categorySwitch").on("click", function() {
+            $(this).next().slideToggle();
+			$(this).toggleClass("open");
+        });
+		return false;
+    });
+</script>
+
