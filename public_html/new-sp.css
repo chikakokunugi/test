@@ -1024,11 +1024,24 @@ input[name="brand_search_button"]{
     width: calc((100% - 30px) / 2)!important;
     float: left;
     margin-right: 15px!important;
-    height: 170px;
 }
 
 .item li img {
 	width: 100%!important;
+}
+
+
+
+.item a{
+	font-size: 12px!important;
+}
+
+.item a span {
+	font-size: 14px!important;
+	color: #bb0000;
+margin-bottom: 20px!important;
+display: block!important;
+
 }
 
 .indexNew {
@@ -1041,6 +1054,7 @@ input[name="brand_search_button"]{
     clear: both;
     visibility: hidden;
 }
+
 
 
 
@@ -1072,7 +1086,6 @@ input[name="brand_search_button"]{
 
 }
 
-
 #pickup, #category-menu {
 	padding-left: 20px;
 	padding-right: 20px;
@@ -1093,3 +1106,248 @@ input[name="brand_search_button"]{
 	margin-top: 5px;
 	margin-bottom: 30px;
 }
+
+
+#category-menu .category-boxes{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin-bottom: 40px;
+}
+
+#category-menu li.category-box {
+	border: solid 2px;
+	border-radius: 5px;
+	width: calc((100% - 23px)/ 2);
+	margin-bottom: 20px;
+	margin-right: 15px;
+}
+
+#category-menu li.category-box:nth-child(2n){
+	margin-right: 0
+}
+
+.category-box figure {
+	float: left;
+	margin-left: 0px;
+	margin-top: 0px;
+	width: 58px;
+	background-color: #fff;
+}
+
+.category-box figure img {
+	display: block;
+	margin: 0 auto!important;
+}
+
+.category-box h3 {
+    float: right;
+    width: calc(100% - 63px);
+	position: relative;
+	font-size: 13px;
+	letter-spacing: 0.05em;
+	background-color: #efefef;
+	text-align: left;
+	padding-top: 17px!important;
+	padding-left: 5px;
+	padding-bottom: 15px;
+}
+
+.category-box h3 span {
+	display: block;
+	color: rgb(145, 145, 145);
+	font-weight: normal;
+	margin-top: 2px;
+	font-size: 9px;
+}
+
+.category-box h3:after{
+  content: '';
+  width: 6px;
+  height: 6px;
+  border: 0px;
+  border-top: solid 2px #000;
+  border-right: solid 2px #000;
+  -ms-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  position: absolute;
+  top: 50%;
+  right: 8px;
+  margin-top: -4px;
+}
+
+.category-box.cleaner img {
+	width: 44px;
+	margin: 7px auto!important;
+
+}
+.category-box.apple img {
+	width: 52px;
+	margin: 15px auto 0!important;
+
+}
+
+.category-box.audio img {
+	width: 48px;
+	margin: 7px auto 0!important;
+}
+
+.category-box.cosme img {
+	width: 48px;
+	margin: 12px auto!important;
+}
+
+.category-box.beauty img {
+	width:100%;
+	margin: 2px auto!important;
+}
+
+.category-box.camera img {
+	width: 45px;
+	margin: 8px auto 0!important;
+ }
+
+.category-box.drone img {
+    margin-top: 15px!important; 
+ }
+
+ .category-box.supplement img {
+ 	width: 33px;
+ 	margin: 5px auto!important;	
+ }
+
+
+#aboutus {
+	background-color: #efefef;
+	padding: 25px 20px 0;
+}
+
+#aboutus div {
+	background-color: #fff;
+	padding: 15px 20px 43px;
+}
+
+#aboutus h3 {
+	font-size: 14px;
+	margin-bottom: 10px;
+}
+
+#aboutus p {
+	text-align: left;
+	margin-bottom: 15px;
+}
+
+.page-link {
+	background-color: #000;
+	color: #fff!important;
+	padding: 7px 22px 7px 10px;
+	border-radius: 5px;
+	position: relative;
+    float: right;
+	vertical-align: middle;
+	font-size: 10px;
+}
+.page-link:after {
+  content: '';
+  width: 5px;
+  height: 5px;
+  border: 0px;
+  border-top: solid 1px #fff;
+  border-right: solid 1px #fff;
+  -ms-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  position: absolute;
+  top: 54%;
+  right: 10px;
+  margin-top: -4px;
+}
+
+
+.footer-menu {
+	padding: 15px
+}
+
+.footer-menu li a{
+	color: #000!important;
+	margin-right: 15px;
+}
+
+.footer-menu li:before{
+	content:url(https://gigaplus.makeshop.jp/samasama10/sp/icon/list.png);
+	margin-right: 5px;
+	font-size: 10px;
+
+}
+
+.copyright {
+	font-size: 10px!important;
+	color: #000!important;
+}
+
+
+
+.footer-Nav li {
+	float: left;
+	width: calc((100% - 133px)/ 3);
+	position: relative;
+	background-color: #fee13c;
+	border-right: solid 2px #000;
+	font-weight: 900;
+	font-size: 14px!important;
+	text-align: left;
+    position: relative;
+    padding: 13px 0 13px 43px!important;
+}
+
+
+.footer-Nav li:last-child {
+	border-right: none;
+
+}
+
+.footer-Nav li span {
+	font-size: 10px;
+	font-weight: 400;
+	display: block;
+}
+
+.footer-Nav li a:before {
+	position: absolute;
+	content: '';
+	display: block;
+	width: 100%;/*幅*/
+	background-size: contain;
+	background-repeat: no-repeat;/*画像を繰り返さない*/
+}
+
+.f-Nav-link a:before {
+  width: 50px;/*画像の幅*/
+  height: 25px;/*画像の高さ*/
+  top: 18px;
+  left:18px;
+  background-image: url(https://gigaplus.makeshop.jp/samasama10/sp/icon/guide.png);
+ }
+
+.f-navCart a:before {
+  width: 25px;/*画像の幅*/
+  height: 22px;
+  top: 18px;
+  left:10px;
+  background-image: url(https://gigaplus.makeshop.jp/samasama10/sp/icon/footer-cart.png);
+ }
+
+.f-navMenu a:before {
+  width: 15px;/*画像の幅*/
+  height: 17px;
+  top: 20px;
+  left:13px;
+  background-image: url(https://gigaplus.makeshop.jp/samasama10/sp/icon/footer-menu.png);
+ }
+
+
+
+
+
+

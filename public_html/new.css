@@ -97,17 +97,6 @@ a:hover img{
     \&#216;\&#195;\&#192; #header
 
 *****************************************************/
-#headerWrap{
-    width:100%;
-    background: #fff url(/images/original_design_default/samplesource/3/body_bg.png) repeat-x bottom;
-    text-align:center;
-    padding-bottom:15px;
-}
-#header{
-    width:960px;
-    position:relative;
-    margin:0 auto;
-}
 #head{
     margin-bottom:10px;
     min-height:75px;
@@ -261,6 +250,28 @@ font-family: 'Noto Sans JP', sans-serif;
     height:20px;
     border:1px solid #b2b2b2;
 }
+
+#inputWrap {
+	position: relative;
+}
+
+
+#MakeShopTopSearchButton {
+	display: block;
+	width: 50px;
+	height: 50px;
+    right: -14px;
+    top: 0;
+    color: #fee13c!important;
+	position: absolute;
+	background-image: url(https://gigaplus.makeshop.jp/samasama10/icon/search.png);
+	background-repeat: no-repeat;
+	text-indent:100%;
+	white-space:nowrap;
+	overflow:hidden;
+
+}
+
 /* \&#171;\&#198;\&#161;&#173;\&#234;&#161;&#188;\&#225;\&#203;\&#229;&#161;&#188; */
 #l_category td{
 	text-align:left;
@@ -491,20 +502,37 @@ font-family: 'Noto Sans JP', sans-serif;
     &#190;&#166;&#201;&#202;\&#171;\&#198;\&#161;&#173;\&#234;&#161;&#188;&#164;&#200;&#190;&#166;&#201;&#202;&#190;&#220;&#186;&#217;&#161;&#161;&#162;&#249;&#166;&#196;&#204;
 ----------------------------------------------------*/
 .pankuzu{
-    text-align:left;
-    background:#e6e6e6;
-    border:1px solid #c9c9c9;
+    text-align:left!important;
     line-height:20px;
     margin-bottom:10px;
+    font-weight: 14px!important;
 }
+
+
 .pankuzu a{
-    padding:0 5px;
-    font-size:11px;
-    color:#333;
+    padding:0 5px 0 0;
+    font-size:14px;
+    color:#000;
+}
+
+.pankuzu a:hover {
+	text-decoration: underline!important;
 }
 .pankuzu  font{
-    color:#333;
-    font-size:11px;
+    color:#000;
+    font-size:14px;
+}
+
+#M_topicPathWrap h2:before {
+	clear: both!important;
+}
+#M_topicPathWrap h2 {
+	font-size: 18px;
+	font-weight: 700!important;
+	border-top: 2px solid;
+	border-bottom: 2px solid;
+	padding: 10px 0;
+	margin-bottom: 20px;
 }
 /*----------------------------------------------------
     &#190;&#166;&#201;&#202;\&#171;\&#198;\&#161;&#173;\&#234;&#161;&#188; #category
@@ -757,12 +785,17 @@ font-family: 'Noto Sans JP', sans-serif;
 }
 /* \&#225;&#161;&#188;\&#235;\&#234;\&#243;\&#175; */
 #r_contact{
-    margin:10px 0 10px -5px ;
+
 }
 #r_contact li{
     float:left;
-    margin-left:5px;
 }
+
+#r_contact .fav {
+	margin-left: 14px;
+	margin-top: 10px;
+}
+
 /* SNS */
 #r_sns{
     margin-top:10px;
@@ -772,10 +805,16 @@ font-family: 'Noto Sans JP', sans-serif;
 }
 /* \&#171;&#161;&#188;\&#200;&#164;&#203;&#164;&#164;&#164;&#236;&#164;&#235;\&#220;\&#191;\&#243; */
 #basketBtn{
-    background:#e6e6e6;
-    padding:10px;
-    margin-top:10px;
+    background:#;
+    padding:0px;
+    margin-top:30px;
 }
+
+#basketBtn a {
+	display: block!important;
+	margin-bottom: 7px!important;
+}
+
 #basketBtn .soldout{
     text-align:center;
     color:#cc0000;
@@ -1112,6 +1151,8 @@ font-family: 'Noto Sans JP', sans-serif;
 	background: #999;
 	color: #fff;
 }
+
+
 .quantityWrap{
 	display:table;
 }
@@ -1359,9 +1400,9 @@ a:hover {
 	right: 0;
     top: 0;
 }
-#headerWrap a {
-	text-decoration: none;
-	color: #000;
+a {
+	text-decoration: none!important;
+	color: #000!important;
 }
 
 #header-bar {
@@ -1811,7 +1852,7 @@ width: calc((100% - 30px)/ 2);
 	background-color: #efefef;
 }
 #aboutus #aboutus_box{
-  width: 1100px;
+  max-width: 1100px;
   margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
@@ -2009,7 +2050,7 @@ address {
 }
 
 
-#M_headBasketSwitch a:before {
+#M_basketClosedBox a:before {
 	content:url(https://gigaplus.makeshop.jp/samasama10/icon/cart.png)!important;
 
 }
@@ -2074,3 +2115,126 @@ address {
 .bx-default-pager {
     display: none;
 }
+
+#M_basketOpenedBox{
+	width:270px!important;
+	right: 90px!important;
+	border-radius: 5px;
+}
+
+.M_headItem a{
+white-space: nowrap!important;
+overflow: hidden!important;
+text-overflow: ellipsis!important;
+width: 150px!important;
+display: block;
+}
+
+.M_headImg img{
+	width: 70px!important;
+}
+
+
+
+.item li {
+    margin: 0!important;
+    width: calc((100% - 15px) / 2)!important;
+}
+
+.item li:nth-child(odd) {
+margin-right: 15px!important;}
+
+.item li img {
+	width: 100%!important;
+}
+
+.indexNew {
+	margin: 25px 20px;
+}
+
+.M_quantity-wrap {
+	display: none;
+}
+
+
+#itemIg{
+	float: left!important;
+	width: 540px!important;
+
+}
+
+div.M_imageCatalog table td {
+    border: none!important;
+    width: 150px!important;
+    height: auto!important;
+    text-align: center;
+}
+
+
+
+.M_imageWrap img {
+	width: 100%!important;
+	height: auto;
+	display: block!important;
+}
+
+
+#detailInfo {
+	float: left;
+	width: 245px!important;
+	padding-left: 35px;
+}
+
+#basketBtn {
+	display: inline-block;
+}
+
+#detailInfo02 {
+	text-align: left;
+
+}
+
+#r_addImg .addImg a{
+    border:none!important;
+}
+
+#r_addImg .addImg a img {
+	width: 100%;
+}
+
+#main {
+	margin-left: 40px;
+	width: 820px!important;
+}
+
+
+.M_original-code {
+    display: none!important;
+}
+
+.M_infoTable {
+	margin-top: 20px!important;
+}
+#M_usualValue font {
+    display: none!important;
+}
+
+#M_usualValue:before {
+    margin-right: -10px!important;
+	content: url(https://gigaplus.makeshop.jp/samasama10/icon/price.png);
+}
+
+#M_usualValue td {
+    color: #c10007!important;
+    padding: 0!important;
+    font-size: 20px!important;
+    line-height: 1!important;
+}
+
+#deliver {
+    float: left!important;
+    font-size: 14px!important;
+    font-weight: 700;
+    padding: 10px 0;
+}
+

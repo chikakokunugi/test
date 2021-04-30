@@ -1,0 +1,142 @@
+<span style="background-color:#EF2929;"></span><style>#main table{
+    border-collapse:separate !important;
+}
+#main table table{
+	border-spacing: revert!important;
+}
+#main table td {
+	padding: 5px;
+	line-height: 1.6;
+}</style>
+<div id="main">
+<form name="form1" action="/shop/basket.html" method="post">
+    <input type="hidden" name="price1" value="1"><input type="hidden" name="price2" value="1"><input type="hidden" name="taxview" value="0">
+    <div id="M_topicPathWrap">
+ <div class="clearfix"><p class="pankuzu"><a href="/index.html">トップ</a> [LIST_NO_ICON]</p></div>
+ <h2 id="item" class="clearfix">[BRANDNAME]</h2>		
+		    <ul class="clear" id="itemLink">
+    	[IF_PREV]<li class="item_prev"><a href="[PREV]">前の商品</a></li>[ENDIF_PREV]
+        [IF_NEXT]<li class="item_next"><a href="[NEXT]">次の商品</a></li>[ENDIF_NEXT]
+    </ul>
+
+        </div>
+    <div class="clear"></div>
+    <ul id="pageNv" class="clearfix">
+            </ul>
+
+	<div class="clear"></div>
+	
+<section class="clearfix">
+        <div id="itemIg" class="clearfix">
+            [RESIZE_IMAGE_540]
+            [IF_VIEWBUTTON]<div id="viewButton"><a href=[VIEWBUTTON]><img src="/images/original_design_default/samplesource/3/r_viewBtn.png" alt="拡大画像"></a></div>[ENDIF_VIEWBUTTON]
+			
+        </div>
+    
+            <style type="text/css">
+<!--
+
+/* 共通CSS */
+.clearfix{
+   /zoom:1;
+}
+
+.clearfix:after {
+   content:'';
+   display:block;
+   clear:both;
+}
+
+div#main div.sub_content_box {
+    margin-top: 16px;
+    text-align: left;
+}
+
+
+div#main div.mgT16 {
+    margin-top: 16px;
+}
+
+div#main div.mgB16 {
+    margin-bottom: 16px;
+}
+
+div#main div.sub_image_box {
+    width:200px;
+    text-align:center;
+}
+-->
+</style>
+<style type="text/css">
+<!--
+
+/* レイアウト変更用CSS */
+
+div#main div.sub_brand_box {
+    float: left;
+    width:200px;
+}
+
+div#main div.sub_m1 { margin:0 8px 8px 0; }
+div#main div.sub_m2  { margin-bottom: 8px; }
+
+
+
+-->
+</style>
+	<!--追加商品画像と説明文-->
+
+	<div id="detailInfo">
+		
+            [INFO]
+   		<div id="deliver">[HAISOU]</div>
+           <div id="basketBtn">
+                [IF]<a href=[GETBASKET] class="btn-cart"><img src="https://gigaplus.makeshop.jp/samasama10/button/cart.png" alt="かごに入れる"></a>
+                <a href=[SUGU] class="btn-buynow"><img src="https://gigaplus.makeshop.jp/samasama10/button/buynow.png" alt="すぐに購入"></a>[END]
+                [ELSE]<p class="soldout">品切れ</p>[ENDIF]
+                <!--再入荷お知らせ-->[IF_RESTOCK]<div id="restockSend"><a href=[RESTOCK]>再入荷お知らせ</a></div>[ENDIF_RESTOCK]
+            </div>
+
+		
+            <div class="section clear" id="r_contact">
+                <ul class="clearfix">
+                    <li class="item-contact"><a href=[QUESTION_MAIL]><img src="https://gigaplus.makeshop.jp/samasama10/button/contact.png" alt="商品についての問い合わせ"></a></li>
+					 <li class="fav"><a href=[WISHLIST]><img src="https://gigaplus.makeshop.jp/samasama10/button/fav.png" alt="お気に入りリスト"></a></li>
+				</ul>
+            </div>
+
+			<div class="section clear" id="r_sns">
+                <ul>
+                    <li class="twitter"><a href=[TWITTER]><img src="https://gigaplus.makeshop.jp/samasama10/button/twitter.png" alt="商品についての問い合わせ"></a></li>
+<!--
+                    <li>[TWITTER_BUTTON_1] </li>
+                    <li>[FACEBOOK_BUTTON_1_N_1_1_30_440]</li>
+                    <li>[MIXI_CHECK_1]</li>
+                    <li>[MIXI_GOOD_Y]</li>
+-->
+                </ul>
+			</div>
+	</div>
+	</section>
+    <div id="moreDetail" class="clearfix">
+        <div id="detailInfo02">
+            <div class="detailTxt">[DETAIL]</div>
+        </div>
+    </div>
+</form>
+
+<div class="clear"></div>
+	
+	
+	<!--最近チェックした商品-->
+	[IF_RECENT]
+        <div class="section" id="r_recent">
+        <h3><img src="/images/original_design_default/samplesource/3/recent_title.gif" alt="最近チェックした商品" class="m_title"></h3>
+        [RECENT]
+        </div>
+	[ENDIF_RECENT]
+ <script>
+        function bottom_privercy() {
+            window.open("/html/privercy.html","privercy","height=570,width=640,scrollbars=yes");
+        }
+        </script></div>
